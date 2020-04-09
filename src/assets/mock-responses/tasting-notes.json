@@ -1,0 +1,37 @@
+[
+  {
+    "id": "",
+    "wineName": "",
+    "blind": false,
+    "visualCharacteristics": {
+      "clarity": "CLEAR|CLOUDY",
+      "intensity": "LIGHT|MEDIUM|DEEP",
+      "sparkle": "FINE|COARSE|CORONA",
+      "wineColor": {
+        "color": "WHITE|RED|ROSE",
+        "specificColor": "CHERRY|GRANATE|PURPLE|BROWN_RED|LIGHT_ROSE|SALMON_ROSE|ORANGE|PALE_YELLOW|GOLD_YELLOW|AMBER"
+      }
+    },
+    "olfactiveCharacteristics": {
+      "purity": "PLEASANT|UNPLEASANT",
+      "intensity": "LIGHT, MEDIUM, PRONOUNCED",
+      "aroma": "FRUITY|FLORAL|VEGETAL|SPICY|EATERICAL|ANIMAL|WOODY|CHEMICAL|BURNING|BALMY",
+      "aromaDescription": "Extra aroma beschrijving"
+    },
+    "gustativeCharacteristics": {
+      "acidity": "LIGHT|MEDIUM|HIGH|DISTURBING",
+      "mellowness": "LIGHT|FILMING|HALF_SWEET|SWEET",
+      "tannines": "LIGHT|MEDIUM|HIGH|DISTURBING",
+      "alcohol": "LIGHT|MEDIUM|HIGH|DISTURBING"
+    },
+    "country": "",
+    "region": "",
+    "appelation": "",
+    "grapes": [
+      {
+        "grape": "",
+        "percentage": 100
+      }
+    ]
+  }
+]

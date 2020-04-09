@@ -4,12 +4,20 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'tasting',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'tasting',
+    loadChildren: () => import('./tasting/page/tasting.module').then(m => m.TastingPageModule)
+  },
+  {
+    path: 'tasting-note',
+    loadChildren: () => import('./tasting-note/page/tasting-note.module').then(m => m.TastingNotePageModule)
+  },
+  {
+    path: 'favorites',
+    loadChildren: () => import('./favorites/page/favorites.module').then(m => m.FavoritesPageModule)
   }
 ];
 

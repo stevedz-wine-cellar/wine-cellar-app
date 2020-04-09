@@ -1,0 +1,92 @@
+[
+  {
+    "id": "",
+    "date": "AN ISO DATE",
+    "name": "Proeverij Iliwine",
+    "description": "Beschrijving van hoe het was waar!",
+    "location": {
+      "lat": 50.8460639,
+      "long": 3.58431,
+      "address": {
+        "street": "Markt",
+        "number": "62",
+        "zipCode": 9700,
+        "city": "Oudenaarde"
+      },
+      "name": "Pomme d'Or"
+    },
+    "image": "/assets/images/tastings/pomme-dor.jpeg"
+  },
+  {
+    "id": "",
+    "date": "AN ISO DATE",
+    "name": "Proeving 2",
+    "description": "Beschrijving van proeving 2",
+    "location": {
+      "lat": 50.8460639,
+      "long": 3.58431,
+      "address": {
+        "street": "Markt",
+        "number": "62",
+        "zipCode": 9700,
+        "city": "Oudenaarde"
+      },
+      "name": "Pomme d'Or"
+    },
+    "image": "/assets/images/tastings/iliwine.jpeg"
+  },
+  {
+    "id": "",
+    "date": "AN ISO DATE",
+    "name": "Proeving 3",
+    "description": "Beschrijving van proeving 3",
+    "location": {
+      "lat": 50.8460639,
+      "long": 3.58431,
+      "address": {
+        "street": "Markt",
+        "number": "62",
+        "zipCode": 9700,
+        "city": "Oudenaarde"
+      },
+      "name": "Pomme d'Or"
+    },
+    "image": "/assets/images/tastings/red-white-rose.jpeg"
+  },
+  {
+    "id": "",
+    "date": "AN ISO DATE",
+    "name": "Proeving 4",
+    "description": "Beschrijving van proeving 4",
+    "location": {
+      "lat": 50.8460639,
+      "long": 3.58431,
+      "address": {
+        "street": "Markt",
+        "number": "62",
+        "zipCode": 9700,
+        "city": "Oudenaarde"
+      },
+      "name": "Pomme d'Or"
+    },
+    "image": "/assets/images/tastings/red-wine.jpeg"
+  },
+  {
+    "id": "",
+    "date": "AN ISO DATE",
+    "name": "Proeving 5",
+    "description": "Beschrijving van proeving 5",
+    "location": {
+      "lat": 50.8460639,
+      "long": 3.58431,
+      "address": {
+        "street": "Markt",
+        "number": "62",
+        "zipCode": 9700,
+        "city": "Oudenaarde"
+      },
+      "name": "Pomme d'Or"
+    },
+    "image": "/assets/images/tastings/red-wine-outdoor.jpeg"
+  }
+]
