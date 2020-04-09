@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+}

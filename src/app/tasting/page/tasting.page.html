@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tastings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tastings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="grid">
+    <ion-card *ngFor="let tasting of tastings$ | async">
+      <img class="card-image" src="{{tasting.image}}" />
+      <ion-card-header>
+        <ion-card-title>{{tasting.name}}</ion-card-title>
+        <ion-card-subtitle>{{tasting.location.name}}</ion-card-subtitle>
+        <ion-card-content>
+          {{tasting.description}}
+        </ion-card-content>
+      </ion-card-header>
+    </ion-card>
+
+  </div>
+</ion-content>
