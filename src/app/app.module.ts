@@ -10,7 +10,21 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import {HttpClientModule} from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule} from "@angular/fire/auth";
+import { FirebaseUIModule, firebase, firebaseui } from 'firebaseui-angular';
+
+const firebaseUiAuthConfig: firebaseui.auth.Config = {
+  signInFlow: 'redirect',
+  signInOptions: [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+  ],
+  tosUrl: 'https://https://winecellar-259622.web.app/tos',
+  privacyPolicyUrl: 'https://https://winecellar-259622.web.app/privacyPolicy',
+  credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM
+};
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +34,10 @@ import {HttpClientModule} from "@angular/common/http";
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    FirebaseUIModule.forRoot(firebaseUiAuthConfig)
   ],
   providers: [
     StatusBar,

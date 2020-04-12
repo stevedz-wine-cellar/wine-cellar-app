@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "winecellar-259622"
+  },
+  "targets": {
+    "winecellar-259622": {
+      "hosting": {
+        "app": [
+          "winecellar-259622"
+        ]
+      }
+    }
   }
 }
