@@ -8,6 +8,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'auth',
+    redirectTo: 'tasting',
+    pathMatch: 'full'
+  },
+  {
     path: 'tasting',
     loadChildren: () => import('./tasting/page/tasting.module').then(m => m.TastingPageModule)
   },

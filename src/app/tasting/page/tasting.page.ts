@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {TastingsService} from "../service/tastings.service";
 import {Observable} from "rxjs";
 import {Tasting} from "../domain/tasting";
+import { OAuthService } from "angular-oauth2-oidc";
 
 @Component({
   selector: 'app-tasting',

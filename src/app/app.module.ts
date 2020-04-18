@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import {HttpClientModule} from "@angular/common/http";
+import {OAuthModule} from "angular-oauth2-oidc";
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import {HttpClientModule} from "@angular/common/http";
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    OAuthModule.forRoot()
   ],
   providers: [
     StatusBar,
